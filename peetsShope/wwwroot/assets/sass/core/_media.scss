@@ -1,0 +1,218 @@
+@media screen and (max-width:320px){
+   
+    
+       
+    .home{
+        .home__container{
+            .home__image{
+                width: 180px;
+            }
+        }
+    }      
+}
+@media screen and (max-width:576px){ 
+   
+   .nav{
+
+       .nav__menu .nav__product{
+           width:auto;
+           right: 0;
+           
+        }
+        .nav__product__item{
+            gap: 0;
+            padding-right: 4rem;
+            position: relative;
+        }
+        .nav__product__btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }         
+   
+    .home__content{
+
+            .home__text{
+                 padding: 0 0;
+            }
+    }
+
+    
+    .home__image{
+        width: 180px;
+        .circle__background{
+            width: 180px;
+        }
+        .image{
+            width: 180px;
+        }
+    }
+    .service{
+        .service__row{
+            .service__container{
+                grid-template-columns: .7fr;     
+                justify-content: center;                        
+            }
+        }
+    }
+    .product{
+
+        .product__container{
+            grid-template-columns: 220px;
+            gap: 2rem;
+        }
+    }
+
+    .subscribe__inputs{
+        width: 75%;
+    }
+
+    .footer{
+
+        .footer__container{
+            grid-template-columns: 1fr;
+        }
+    }
+    
+   
+     
+}
+@media screen and (max-width:767px){
+    
+        
+    .nav{
+
+        .nav__menu{
+            right: var(--m-1); 
+            .menu-btn{
+                display: flex;
+                align-items: center;
+            }
+        }
+       }
+      
+    header{
+        .nav{
+            height: 3.25rem;
+            .nav__links{
+                background-color:var(--secondy-color);
+                position: absolute;
+                
+                right: 0;
+                top: 0;
+                height: 100vh;
+                min-width: 70px;
+
+                padding: 5rem;
+                justify-content: none;
+                z-index: calc(var( --z-fixed)+1);
+                visibility: visible;
+                transition:  visibility.2s, transform.4s;
+
+                .nav__list{
+                    position: relative;
+                    flex-direction: column;
+                    
+                }
+                .close-btn{
+                    visibility: visible;
+                    position: absolute;
+                    left: 1rem;
+                    top: 1rem;
+                    font-size: var(--h1-font-size);
+                }
+            }
+            
+        }
+    }
+  
+        .about__img,.home__image{
+            justify-self: center;
+            width: 320px;
+            text-align: center;
+        }
+    
+    .home{
+        .home__container{
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            .home__image{
+                grid-row: 1;
+            }
+               
+            .home__content{
+                grid-row: 2;
+            }
+           
+
+                .home__social{
+                    top: 10%;
+                }
+        }
+    }
+    .about{
+        .about__container{
+            grid-template-columns: auto;
+            row-gap: 2rem;
+        }
+    }
+    .contact{
+        .contact__container{
+            grid-template-columns: auto;
+            row-gap: 3rem;
+        }
+    }
+
+}
+@media screen and (max-width:800px){
+    
+        .nav__menu{
+            
+            .nav__product{
+                width: 400px;
+            }
+        }
+    
+
+    .product{
+        .section__sub__title{
+            padding: 0;
+        }
+    }
+        .product__container{
+            grid-template-columns: 220px 220px;
+        }
+}
+@media screen and (max-width:1080px){
+    .nav__menu  .nav__product{
+        right: var(--m-2-5);
+    }
+    
+    
+    
+    .container{
+        margin: 0 var(--m-1-5);
+        max-width: auto;
+        // margin-left: var(--m-1-5);
+        // margin-right: var(--m-1-5);
+    }
+    .home{
+        padding: 8rem 0 1rem;
+    }
+    
+    
+    .footer{
+        .footer__container{
+            row-gap: 5rem;
+        }
+    }
+    .service__container,.footer__container{
+        grid-template-columns: .5fr .5fr;
+        
+    }
+    
+    
+    
+}
+

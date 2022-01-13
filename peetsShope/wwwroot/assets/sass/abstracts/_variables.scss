@@ -1,0 +1,73 @@
+
+/*_________________________________________________________*/
+/*-------------Variables------------------------*/
+
+
+:root{
+
+    /*Color*/
+    --green:158;
+    --blue:209;
+    /*web site Color*/
+    --primary-color:hsl(158, 99.1%, 44.1%);//#5CDB95
+    --secondy-color:hsl(209, 100%, 22%);//#05386B;
+    --green-darken-color:hsl(168, 46%, 40%);//#379683
+    --green-lighten-color:hsl(143, 61%, 73%);//#8EE4AF
+    --white-color:rgb(235, 246, 223);//#EDF5E1;
+    --text-color-about:#353D47;
+    /*title color*/
+    
+    --big-title-color:hsl();
+    --text-color:hsl();
+    --text-color-lighter:hsl();
+
+    /* font familly*/
+    --body-font:'Poppins',sans-serif;
+
+    /*font size*/
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    /*font height*/
+    --medium-font-height:500;
+    --big-font-height:600;
+
+
+    /* margins*/
+    --m-2-5 : 2.5rem;
+    --m-2: 2rem;
+    --m-1-5 : 1.5rem;
+    --m-1 : 1rem;
+    --m-0-75 : .75rem;
+    --m-0-5 : .5rem;
+    --m-0-25 : .25rem;
+
+    /*padding*/
+    --header-padding:13rem 0 5rem;
+    --section-padding:8rem 0 1rem;
+    /* z-index*/
+    --z-tooltip : 10;
+    --z-fixed : 100;
+
+    /*heights*/
+    --header-height: 3.5rem;
+    
+
+
+    @media screen and (max-width: 968px){
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+    
+
+    
+}

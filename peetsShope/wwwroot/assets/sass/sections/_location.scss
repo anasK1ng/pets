@@ -1,0 +1,43 @@
+.map{
+    padding: 0 0 1rem 0;
+    background-color: var(--primary-color);
+    iframe{
+
+        width: 100%;
+        z-index: 1;
+        
+    }
+    .map__symbole{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color:rgba($color: #353D47, $alpha: .7) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .4s;
+        &:hover{
+            background-color:rgba($color: #353D47, $alpha: .4) ;
+          
+        }
+        i{
+            font-size: var(--big-font-size);
+            color: var(--primary-color);
+        }
+
+    }
+}
+.map__container{
+    position: relative;
+    
+}
+
+.map__z-index{
+opacity: 0;
+i{
+    opacity: 0;
+}}

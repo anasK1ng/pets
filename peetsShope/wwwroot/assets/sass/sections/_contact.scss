@@ -1,0 +1,109 @@
+.contact{
+    background-color: var(--green-lighten-color);
+}
+.contact__container{
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 4rem;
+}
+
+.contact__box{
+   
+        .contact__title{
+            font-size: var(--h1-font-size);
+            margin-bottom: var(--m-2);
+            line-height: 140%;
+            padding-right: 2rem;
+            color: var(--text-color-about);
+            position: relative;
+            &::after{
+                content: '';
+                height: 100%;
+                width: .5rem;
+                position: absolute;
+                top: 0;
+                left: -.75rem;
+                background-color: var(--secondy-color);
+            }
+        }
+        .contact__sub__title{
+            color: var(--secondy-color);
+            margin-bottom: var(--m-0-5);
+        }
+        .contact__value{
+            display: inline-flex;
+            align-items: center;
+            column-gap: .5rem;
+            font-weight: var(--medium-font-height);
+            color: var(--text-color-about);
+            i{
+                font-size: var(--h2-font-size);
+                align-items: center;
+            }
+        }
+    
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    .contact__inputs{
+        display: grid;
+        row-gap: 3rem;
+        margin-bottom: var(--m-2-5);
+
+ 
+    }
+    .contact__button{
+        display: inline-flex;
+        padding: 1rem 1.75rem;
+        align-items: center;
+        background-color:var(--secondy-color);
+        color: var(--white-color);
+        position: relative;
+        transition: .4s;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: .2rem;
+            background-color: var(--white-color);
+            transition: .4s;
+           
+          
+        }
+         &:hover{
+                &::before{
+                    width: 100%;
+                }
+        }
+        
+    }
+}
+.contact__input{
+    display: flex;
+    flex-direction: column;
+    border-bottom: .125rem solid var(--secondy-color);
+    label{
+        color: var(--secondy-color);
+    }
+    input,textarea{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem 1rem 0;
+        color: var(--text-color-about);
+        background-color: var(--green-lighten-color);
+    }
+   
+    textarea{
+        height: 7rem;
+    }
+}
+.info{
+    display: grid;
+    row-gap: 2rem;
+}
+
+input:-internal-autofill-selected {
+    background-color:#111111 !important;
+}

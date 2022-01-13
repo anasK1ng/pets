@@ -1,0 +1,37 @@
+.from__top{
+    transform: translateY(-150px);
+    opacity: 0;
+}
+.transition__top{
+    transition:  opacity 2s, transform 2s ;
+    transition-delay: 1s;
+}
+
+
+
+.from__left{
+    transform:translateX(-150px);
+    opacity: 0;
+}
+.from__right{
+    transform: translateX(150px);
+    opacity: 0;
+}
+
+.toggle{
+    transform: translateX(250px);
+    visibility:hidden;
+    transition:  visibility.2s, transform.4s;
+}
+
+
+
+.from__service__top{
+    transform: translateY(-150px);
+    opacity: 0;
+}
+
+.transtion__delay_0{
+    transition:  opacity 2s, transform 2s ;
+    
+}
