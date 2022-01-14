@@ -12,5 +12,6 @@ namespace peetsShope.Model
         public string Size { get; set; }
         public string Weight { get; set; }
         public string LifeSpan { get; set; }
+        
     }
 }
